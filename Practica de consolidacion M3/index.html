@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" href="assets/images/cart-icon.png" type="image/png">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-pastel">
+    <a class="navbar-brand" href="#" style="color: #333333;">Supermercado App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/imagenes/descarga (1).png" alt="Carrito" class="cart-icon" height="30px">
+                    Carrito <span id="cart-count" class="badge badge-pill badge-primary">0</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div id="cart-dropdown-content"></div>
+                    <div id="empty-cart-message" style="display: none;">
+                        <span>Tu carrito está vacío</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- lista productos -->
+<div class="container mt-4">
+    <div class="row">
+        <!-- leche -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="./assets/imagenes/leche.jpeg" class="card-img-top" alt="Leche">
+                <div class="card-body">
+                    <h5 class="card-title">Leche</h5>
+                    <p class="card-text">$1000</p>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="btn btn-primary add-to-cart" data-product="Leche" data-price="1000">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- pan de molde -->
+        <div class="col-md-4 mb-4">
+            <div class="card card-pan">
+                <img src="./assets/imagenes/descarga.jpeg" class="card-img-top" alt="Pan de molde">
+                <div class="card-body">
+                    <h5 class="card-title">Pan de molde</h5>
+                    <p class="card-text">$2000</p>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="btn btn-primary add-to-cart" data-product="Pan de molde" data-price="2000">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- queso -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="./assets/imagenes/quesos (1).jpeg" class="card-img-top" alt="Queso" height="232px">
+                <div class="card-body">
+                    <h5 class="card-title">Queso</h5>
+                    <p class="card-text">$1200</p>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="btn btn-primary add-to-cart" data-product="Queso" data-price="1200">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- mermelada -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="./assets/imagenes/mermelada.jpeg" class="card-img-top" alt="Mermelada">
+                <div class="card-body">
+                    <h5 class="card-title">Mermelada</h5>
+                    <p class="card-text">$890</p>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="btn btn-primary add-to-cart" data-product="Mermelada" data-price="890">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- azúcar -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="./assets/imagenes/azucar.jpeg" class="card-img-top" alt="Azúcar">
+                <div class="card-body">
+                    <h5 class="card-title">Azúcar</h5>
+                    <p class="card-text">$1300</p>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="btn btn-primary add-to-cart" data-product="Azúcar" data-price="1300">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-light text-center py-3 mt-4">
+    <p>&copy; 2024 Paz Gtz Portillo Supermercado App.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./assets/script.js"></script>
+</body>
+</html>
